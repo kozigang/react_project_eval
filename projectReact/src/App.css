@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: black;
 }
 
 .logo {
@@ -39,4 +40,83 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+}
+
+.app-container.dark {
+  background-color: #333;
+  color: white;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: #f0f0f0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  gap: 1rem;
+}
+
+.app-container.dark .data-container {
+  background-color: #555;
+  border-color: #888;
+}
+
+.search-container {
+  display: flex;         
+  align-items: center;     
+  gap: 10px;               
+  max-width: 400px;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.weather-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.weather-conditions-container{
+  display: flex; 
+  flex-direction: column; 
+}
+
+.icons{
+  width: 60px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.advice-container {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
